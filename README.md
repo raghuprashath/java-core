@@ -1,1 +1,1 @@
-# java-core - Daily practice excercises
+# java-core 
