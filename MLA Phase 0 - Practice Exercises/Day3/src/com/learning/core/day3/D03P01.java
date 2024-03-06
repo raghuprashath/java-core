@@ -19,7 +19,7 @@ public class D03P01 {
 	public static boolean ispalindrome(String s) {
 		int n=s.length();
 		int j=n-1;
-		for(int i=0;i<n;i++) {
+		for(int i=0;i<n/2;i++) {
 			if(s.charAt(i)==s.charAt(j)) {
 				j--;
 			}

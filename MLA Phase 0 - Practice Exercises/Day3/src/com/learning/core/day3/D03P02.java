@@ -9,6 +9,7 @@ public class D03P02 {
 		int num1=sc.nextInt();
 		int num2=sc.nextInt();
 		int arr[]=new int[5];
+		System.out.println("Enter the Array elements in range 1 to 40 ");
 		for(int i=0;i<5;i++) {
 			arr[i]=sc.nextInt();
 		}

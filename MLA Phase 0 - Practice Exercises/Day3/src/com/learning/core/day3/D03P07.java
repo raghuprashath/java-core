@@ -10,19 +10,19 @@ public class D03P07{
         printSubsequences(s);
     }
 
-    public static void printSubsequences(String input) {
-        subsequences(input, "", 0);
+    public static void printSubsequences(String s) {
+        subsequences(s, "", 0);
     }
 
-    private static void subsequences(String input, String current, int index) {
-        int n = input.length();
+    public static void subsequences(String s, String current, int index) {
+        int n = s.length();
 
         if (index == n) {
             System.out.print(current+" ");
             return;
         }
 
-        subsequences(input, current + input.charAt(index), index + 1);
-        subsequences(input, current, index + 1);
+        subsequences(s, current + s.charAt(index), index + 1);
+        subsequences(s,current, index + 1);
     }
 }
