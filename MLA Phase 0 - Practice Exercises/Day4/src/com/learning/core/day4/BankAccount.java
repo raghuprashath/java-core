@@ -33,7 +33,7 @@ public class BankAccount {
 			}
 		}
 		else {
-			throw new NegativeAmount("Negative Amount");
+			throw new NegativeAmount("NegativeAmount");
 		}
 		return current;
 	}
