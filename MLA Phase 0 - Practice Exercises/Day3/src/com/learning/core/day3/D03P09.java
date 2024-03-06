@@ -1,5 +1,6 @@
 package com.learning.core.day3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class D03P09 {
@@ -20,13 +21,17 @@ public class D03P09 {
 		}
 	}
 	public static boolean cycleornot(String[] s) {
-		for(int i=0;i<s.length;i++) {
-			String y=s[i];
-			for(int j=i+1;j<s.length;j++) {
-				return true;
-			}
+		Arrays.sort(s);
+		for(int i=0;i<s.length-1;i++) {
+			int m=s[i].length()-1;
+				if(s[i].charAt(m)==s[i+1].charAt(0)) {
+					continue;
+				}
+				else {
+					return false;
+				}
 		}
-		return false;
+		return true;
 	}
 
 }

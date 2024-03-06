@@ -24,5 +24,7 @@ public class D03P07{
 
         subsequences(s, current + s.charAt(index), index + 1);
         subsequences(s,current, index + 1);
+        System.out.println("Called");
+
     }
 }

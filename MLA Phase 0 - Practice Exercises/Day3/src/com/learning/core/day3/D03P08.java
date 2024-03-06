@@ -12,11 +12,11 @@ public class D03P08 {
         System.out.println(del);
     }
     public static int noofdeletions(String s) {
-        int longestPalindromeLength = longestPalindromeSubsequence(s);
-        return s.length() - longestPalindromeLength;
+        int longestpalindromelength = longestpalindromesubsequence(s);
+        return s.length() - longestpalindromelength;
     }
 
-    public static int longestPalindromeSubsequence(String s) {
+    public static int longestpalindromesubsequence(String s) {
         int n = s.length();
         int[][] d = new int[n][n];
         for (int i = 0; i < n; i++) {
