@@ -7,9 +7,12 @@ public class D04P03 {
 		Validator c= new Validator();
 		Scanner sc = new Scanner(System.in);
 		try {
-			boolean name = c.isValidApplicantName(sc.nextLine());
-			boolean post =  c.isValidPost(sc.nextLine());
-			boolean age = c.isValidAge(sc.nextInt());
+			String x=sc.nextLine();
+			boolean name = c.isValidApplicantName(x);
+			String y=sc.nextLine();
+			boolean post =  c.isValidPost(y);
+			int a=sc.nextInt();
+			boolean age = c.isValidAge(a);
 			System.out.println("all deatils valid");
 		}
 		catch (CatheyBankException e) {
