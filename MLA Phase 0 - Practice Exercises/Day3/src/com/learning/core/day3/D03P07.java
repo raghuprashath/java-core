@@ -1,16 +1,20 @@
 package com.learning.core.day3;
+
+import java.util.Scanner;
+
 public class D03P07{
 
     public static void main(String[] args) {
-        String input = "abc";
-        printSubsequences(input);
+    	Scanner sc=new Scanner(System.in);
+    	String s=sc.next();
+        printSubsequences(s);
     }
 
     public static void printSubsequences(String input) {
-        printSubsequencesHelper(input, "", 0);
+        subsequences(input, "", 0);
     }
 
-    private static void printSubsequencesHelper(String input, String current, int index) {
+    private static void subsequences(String input, String current, int index) {
         int n = input.length();
 
         if (index == n) {
@@ -18,7 +22,7 @@ public class D03P07{
             return;
         }
 
-        printSubsequencesHelper(input, current + input.charAt(index), index + 1);
-        printSubsequencesHelper(input, current, index + 1);
+        subsequences(input, current + input.charAt(index), index + 1);
+        subsequences(input, current, index + 1);
     }
 }

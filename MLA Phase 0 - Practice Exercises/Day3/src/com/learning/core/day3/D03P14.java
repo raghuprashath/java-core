@@ -5,25 +5,25 @@ public class D03P14 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		int a[] = new int[n];
+		int arr1[] = new int[n];
 		for(int i=0;i<n;i++)
 		{
-			a[i]=sc.nextInt();
+			arr1[i]=sc.nextInt();
 		}
 		int m = sc.nextInt();
-		int b[] = new int[m];
+		int arr2[] = new int[m];
 		for(int i=0;i<m;i++)
 		{
-			b[i]=sc.nextInt();
+			arr2[i]=sc.nextInt();
 		}
 		int l =m+n;
 		int k[]=new int[l];
 		for(int i=0;i<n;i++)
 		{
-			k[i]=a[i];
+			k[i]=arr1[i];
 		}
 		for(int i=0;i<m;i++) {
-			k[i+n]=b[i];
+			k[i+n]=arr2[i];
 		}
 		Arrays.sort(k);
 		System.out.print("Union : "+k[0]+" ");
@@ -36,8 +36,8 @@ public class D03P14 {
 		System.out.print(" Intersection : ");
 		for(int i=0;i<n;i++) {
 			for(int j=0;j<m;j++) {
-				if(a[i]==b[j]) {
-					System.out.print(a[i]+" ");
+				if(arr1[i]==arr2[j]) {
+					System.out.print(arr1[i]+" ");
 				}
 			}
 		}
