@@ -1,6 +1,6 @@
 package com.learning.core.day5;
 
-import java.util.TreeSet;
+import java.util.*;
 public class D05P06 {
     public static void main(String[] args) {
         Person p1=new Person(1, "Alice", 20, 1500.0);
@@ -9,7 +9,7 @@ public class D05P06 {
         Person p4=new Person(4, "David", 18, 1800.0);
         Person p5=new Person(5, "John", 32, 1999.0);
         Person p6=new Person(6, "Tom", 42, 3999.0);
-        TreeSet<Person> p = new TreeSet<>();
+        Set<Person> p = new TreeSet<Person>();
         p.add(p1);
         p.add(p2);
         p.add(p3);

@@ -1,33 +1,15 @@
 package com.learning.core.day5;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
-class Product1{
-    String productId;
-    String productName;
 
-    public Product1(String productId, String productName) {
-        this.productId = productId;
-        this.productName = productName;
-    }
-    public int hashCode() {
-        return productId.hashCode();
-    }
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Product product = (Product) obj;
-        return productId.equals(product.productId);
-    }
-}
 public class D05P04 {
     public static void main(String[] args) {
-    	Product1 p1=new Product1("P001","Maruti 800");
-		Product1 p2=new Product1("P002","Maruti Zen");
-		Product1 p3=new Product1("P003","Maruti Dezire");
-		Product1 p4=new Product1("P004","Maruti Alto");
-		Set<Product1> s=new HashSet<>();
+    	Product p1=new Product("P001","Maruti 800");
+		Product p2=new Product("P002","Maruti Zen");
+		Product p3=new Product("P003","Maruti Dezire");
+		Product p4=new Product("P004","Maruti Alto");
+		Set<Product> s=new HashSet<>();
 		s.add(p1);
 		s.add(p2);
 		s.add(p3);
@@ -37,7 +19,7 @@ public class D05P04 {
         
         boolean found = false;
 
-        for (Product1 product :s) {
+        for (Product product :s) {
             if (product.productId.equals(searchProductId) && product.productName.equals(searchProductId1)) 
             {
                 found = true;
