@@ -32,7 +32,7 @@ public class Student
    public String toString() {
 	   	return name + " " + phoneno + " " + passportNo + " " + licenseNo
 			+ " " + panCardNo + " " + voterid + " " + getClass() + " "
-			+ hashCode() + " " + super.toString() + "]";
+			+ hashCode() + " " + super.toString();
    }	
 
 }
