@@ -1,5 +1,6 @@
 package com.learning.core.day4;
 
+
 public class CricketRating {
 	String playerName;
 	private float critic1;

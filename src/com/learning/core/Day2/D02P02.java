@@ -2,6 +2,7 @@ package com.learning.core.day2;
 
 import java.util.Scanner;
 
+
 public class D02P02 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -12,3 +13,4 @@ public class D02P02 {
 		}
 	}
 }
+

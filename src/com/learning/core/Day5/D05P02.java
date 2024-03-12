@@ -1,5 +1,6 @@
 package com.learning.core.day5;
 
+
 import java.util.*;
 
 public class D05P02 {

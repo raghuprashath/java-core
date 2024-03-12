@@ -1,5 +1,6 @@
 package com.learning.core.day3;
 
+
 import java.util.Scanner;
 
 public class D03P02 {
