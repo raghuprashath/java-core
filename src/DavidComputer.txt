@@ -1,0 +1,2 @@
+A computer is an electrical Device.
+This machine takes in data as input, process it, and gives output.
