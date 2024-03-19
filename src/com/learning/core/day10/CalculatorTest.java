@@ -25,7 +25,7 @@ public class CalculatorTest {
 	{
 		assertEquals(10,D10P08.div(100, 10));
 	}
-	@Test
+	@Test(expected = ArithmeticException.class)
 	public void testDivcatch()
 	{
 		assertEquals(-1,D10P08.div(1, 0));

@@ -7,14 +7,6 @@ public class D10P08 {
 	}
 	public static int div(int x,int y)
 	{
-		try
-		{
-			return x/y;
-		}
-		catch(ArithmeticException e)
-		{
-			System.out.println("Cannot divide a value by Zero");
-		}
-		return -1;
+		return x/y;
 	}
 }
